@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 自定义list -->
+    <dl>
+        <dt>速溶</dt>
+        <dd>速溶咖啡</dd>
+        <dd>意式咖啡</dd>
+        <dd>美式咖啡</dd>
+        <dt>Milk</dt>
+        <dd>white cold drink</dd>
+    </dl>
+    <div>-----------华丽分割线--------------</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- form中的name区分不同的form -->
+    <form name="1">
+        <table border="1px" cellspacing="0px" cellpadding="12px" align="center" width="80%">
+            <caption>
+                <strong>form表单---总结</strong>
+            </caption>
+            <tr>
+                <!-- tips：th会加粗居中 -->
+                <th>类型</th>
+                <th>表现效果</th>
+            </tr>
+            <tr>
+                <td>Github注册</td>
+                <td>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="/day04-2022-09-23/github.png" width="55px"></a>
+                </td>
+            </tr>
+            <td>IconFont注册</td>
+            <td>
+                <a href="https://www.iconfont.cn" target="_blank">iconfont官网</a>
+            </td>
+            </tr>
+            <tr>
+                <td>input button类型：</td>
+                <td>
+                    <div>
+                        <input type="button" value="鸡你太美" />
+                    </div>
+                    <div>
+                        <input type="button" value="Ikun" />
+                        <input type="button" value="小黑子" />
+                        <input type="button" value="kunkun" />
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>input-checkbox复选框：</td>
+                <td>
+                    <!-- td里又装了dive name进行统一绑定 -->
+                    <div> <input type="checkbox" name="11" />唱</div>
+                    <div> <input type="checkbox" name="11" />跳</div>
+                    <div> <input type="checkbox" name="11" />rap</div>
+                </td>
+            </tr>
+            <tr>
+                <td>input-file上传文件：</td>
+                <td><input type="file" /></td>
+            </tr>
+            <tr>
+                <td>input-hidden类型</td>
+                <td>
+                    <div><input type="hidden" />看不见哈</div>
+                    <div>（不可见，用来放一些不希望被用户看见，但是需要提交到服务端的数据）</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>input-image类型</div>
+                    <div>其实也是button标签，只是变成了图片</div>
+                </td>
+                <td>
+                    <div>
+                        <!-- https://www.cnblogs.com/yeminglong/archive/2013/01/05/2845164.html -->
+                        <input type="image" border="2px" width="150px" alt="你是狗" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.huaban.com%2F31d4ecf35a14b1269b987e1326d1369534b6f6cc4f757-oAIvsv_fw658&refer=http%3A%2F%2Fhbimg.huaban.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1666191256&t=511a4e334b35bbb7d2ec5fee95588d0f"
+                        />
+                    </div>
+                    <div><input type="image" alt="图挂了，你是狗" src="#" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td>input-passoword类型</td>
+                <td><input type="password" value="test123" /></td>
+            </tr>
+            <tr>
+                <td>input-passoword类型</td>
+                <td>
+                    <!-- name启动3个input是同一个input 绑定的作用 -->
+                    <!-- 0-男 ；1-女 ；3 人妖 -->
+                    <!-- checked="checked" 默认 -->
+                    <input id="Radio1" type="radio" value="0" name="st_Sex" />男
+                    <input id="Radio2" type="radio" value="1" name="st_Sex" />女
+                    <input id="Radio3" type="radio" value="3" name="st_Sex" checked="checked" />人妖
+                </td>
+            </tr>
+            <tr>
+                <td>input--rest，submit类型</td>
+                <td>
+                    <div>
+                        <!-- for-id -->
+                        <label for="id">User ID:</label>
+                        <input type="text" id="id" name="id" value="" />
+
+                        <input type="reset" id="222" value="Reset">
+                        <input type="submit" value="Submit">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>select 类型</td>
+                <td>
+                    <select>
+                        <option>香翅捞饭</option>
+                        <option>跳</option>
+                        <option>rap</option>
+                        <option>篮球</option>
+                        <option selected="selected">荔枝</option>
+                        <option>香精煎鱼</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td>
+                    <textarea name=" message "></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="xxmen">这个label会增加用户体验</label></td>
+                <td>
+                    <input type="text" value="你点左边坐👈🏻一行也会点到我" id="xxmen" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
