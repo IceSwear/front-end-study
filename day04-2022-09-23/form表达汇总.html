@@ -6,16 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css文件路径">
+    <style>
+        td {
+            font-size: 30px;
+            color: #464baa;
+        }
+        
+        .xxmenmen {
+            font-size: 40px;
+        }
+        
+        #ikun {
+            color: brown;
+        }
+        
+        body {
+            background-color: pink;
+        }
+        
+        .xm {
+            font-family: sans-serif;
+        }
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+    </style>
 </head>
 
+
+
 <body>
+    <div style="color: rgb(12, 8, 8); font-size: 13px;">青春不常在，抓紧谈恋爱</div>
     <!-- 自定义list -->
     <dl>
-        <dt>速溶</dt>
-        <dd>速溶咖啡</dd>
-        <dd>意式咖啡</dd>
-        <dd>美式咖啡</dd>
-        <dt>Milk</dt>
+        <dt class="xxmenmen xm">速溶</dt>
+        <dd id="ikun">速溶咖啡</dd>
+        <dd class="xxmenmen">意式咖啡</dd>
+        <dd class="xxmenmen"> 美式咖啡</dd>
+        <dt id="ikun1">Milk</dt>
         <dd>white cold drink</dd>
     </dl>
     <div>-----------华丽分割线--------------</div>
@@ -64,7 +94,8 @@
             <tr>
                 <td>input-checkbox复选框：</td>
                 <td>
-                    <!-- td里又装了dive name进行统一绑定 -->
+                    <!-- -->
+                    <div> td里又装了dive name进行统一绑定</div>
                     <div> <input type="checkbox" name="11" />唱</div>
                     <div> <input type="checkbox" name="11" />跳</div>
                     <div> <input type="checkbox" name="11" />rap</div>
@@ -100,7 +131,7 @@
                 <td><input type="password" value="test123" /></td>
             </tr>
             <tr>
-                <td>input-passoword类型</td>
+                <td>input-radio类型</td>
                 <td>
                     <!-- name启动3个input是同一个input 绑定的作用 -->
                     <!-- 0-男 ；1-女 ；3 人妖 -->
