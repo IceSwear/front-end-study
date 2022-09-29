@@ -1,0 +1,24 @@
+{
+  "name": "front-end-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IceSwear/front-end-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IceSwear/front-end-study/issues"
+  },
+  "homepage": "https://github.com/IceSwear/front-end-study#readme",
+  "dependencies": {
+    "element-ui": "^2.15.10",
+    "vue": "^2.7.10"
+  }
+}
